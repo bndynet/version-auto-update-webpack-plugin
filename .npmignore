@@ -1,0 +1,5 @@
+npm-debug*
+.vscode/
+test/
+
+.eslintrc.json
