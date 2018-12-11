@@ -1,6 +1,6 @@
 # version-auto-update-webpack-plugin
 
-A webpack plugin to update version in package.json automatically.
+A webpack plugin to increase version number in package.json automatically.
 
 ## Installation
 
@@ -26,7 +26,7 @@ const VersionAutoUpdateWebpackPlugin = require('@bndynet/version-auto-update-web
 ```javascript
 const VersionAutoUpdateWebpackPlugin = require('@bndynet/version-auto-update-webpack-plugin');
 
-new HeaderInjectionWebpackPlugin({
+new VersionAutoUpdateWebpackPlugin({
     versionType: 'major|minor|patch',   // or specified by argument like `webpack --vau.versionType minor` in your package.json
 })
 ```

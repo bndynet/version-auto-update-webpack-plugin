@@ -1,7 +1,7 @@
 {
   "name": "@bndynet/version-auto-update-webpack-plugin",
   "version": "1.0.0",
-  "description": "Webpack plugin for update version in package.json automatically",
+  "description": "Webpack plugin for increasing version in package.json automatically",
   "main": "index.js",
   "scripts": {
     "start": "cd test && npm start",
