@@ -21,12 +21,17 @@ const VersionAutoUpdateWebpackPlugin = require('@bndynet/version-auto-update-web
 }
 ```
 
-**Example**:
+**Example (webpack.config.js)**:
 
 ```javascript
 const VersionAutoUpdateWebpackPlugin = require('@bndynet/version-auto-update-webpack-plugin');
 
-new VersionAutoUpdateWebpackPlugin({
-    versionType: 'major|minor|patch',   // or specified by argument like `webpack --vau.versionType minor` in your package.json
-})
+module.exports = {
+    // ...
+    plugins: [
+        new VersionAutoUpdateWebpackPlugin({
+            versionType: 'major|minor|patch',   // or specified by argument like `webpack --vau.versionType minor` in your package.json
+        })
+    ],
+}
 ```
